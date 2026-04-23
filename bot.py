@@ -684,7 +684,7 @@ async def cmds(event):
     if await is_banned_user(event.sender_id):
         return await event.reply(f"{DECLINED_EMOJI} {bold_text('You are banned!')}", parse_mode='html')
     
-    message = f"""{bold_text(Command List)} 📋
+    message = f"""{bold_text('Command List')} 📋
 
 {bold_text('User Commands:')}
 • /sh cc|mm|yy|cvv — {bold_text('Check a single CC')}
@@ -704,7 +704,7 @@ async def cmds(event):
 • /start — {bold_text('Main menu')}
 • /cmds — {bold_text('This help message')}
 
-{ADMIN_EMOJI} {bold_text(Admin Commands:)}
+{ADMIN_EMOJI} {bold_text('Admin Commands:')}
 • /auth id days — {bold_text('Give premium access')}
 • /unauth id — {bold_text('Remove premium access')}
 • /key count days — {bold_text('Generate keys')}
